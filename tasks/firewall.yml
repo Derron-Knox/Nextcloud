@@ -1,0 +1,20 @@
+---
+#open firewall ports and restart firewalld
+- name: open http port
+  firewalld:
+    service: http
+    permanent: yes
+    state: enabled
+
+- name: open https port
+  firewalld:
+    service: https
+    permanent: yes
+    state: enabled
+  notify:
+  - restart firewalld service
+
+- name: Disable selinux
+  selinux:
+    policy: targeted
+    state: disabled

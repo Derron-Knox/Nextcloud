@@ -1,0 +1,27 @@
+---
+# vars file for nextcloud
+mysql_root_password: "rootpassword"
+nextcloud_user: "nextcloudsqlusername"
+mysql_admin_password: ""
+nextcloud_url: "https://download.nextcloud.com/server/releases/nextcloud-19.0.2.zip"
+needed_packages:
+  - wget
+  - curl
+  - tar
+  - unzip
+  - httpd
+  - mariadb
+  - mariadb-server
+  - python3-PyMySQL
+  - nano
+  - php-mysqlnd
+  - php-fpm
+  - php-json
+  - php-xml
+  - php-zip
+  - php-curl
+  - php-gd
+  - php-intl
+  - php-ldap
+  - php-mbstring
+  - php-opcache
